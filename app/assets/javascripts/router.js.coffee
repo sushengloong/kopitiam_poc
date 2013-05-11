@@ -1,7 +1,10 @@
 Kopitiam.Router.map (match)->
   @resource 'posts', { path: 'posts' }, ->
-    @route 'index'
     @route 'new'
+
+Kopitiam.IndexRoute = Ember.Route.extend
+  redirect: ->
+    @transitionTo 'posts'
 
 Kopitiam.PostsIndexRoute = Ember.Route.extend
   model: ->

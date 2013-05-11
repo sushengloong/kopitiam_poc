@@ -1,3 +1,6 @@
 Kopitiam.Router.map (match)->
-  # match('/').to('index')
+  @route 'posts', path: '/'
 
+Kopitiam.PostsRoute = Ember.Route.extend
+  model: ->
+    Kopitiam.Post.find()

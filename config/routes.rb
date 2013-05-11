@@ -1,5 +1,6 @@
 Kopitiam::Application.routes.draw do
-  root to: 'application#index'
+  get "pages/index"
+  root to: 'pages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

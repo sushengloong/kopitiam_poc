@@ -19,6 +19,7 @@ end
 
 gem 'jquery-rails'
 gem 'ember-rails'
+gem 'bootstrap-sass', '~> 2.3.1.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

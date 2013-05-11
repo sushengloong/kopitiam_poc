@@ -13,9 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
 //= require handlebars
 //= require ember
 //= require ember-data
+
+// Loads all Bootstrap javascripts
+//= require bootstrap
+
 //= require_self
 //= require kopitiam
 Kopitiam = Ember.Application.create();

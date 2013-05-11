@@ -18,5 +18,9 @@ module Kopitiam
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    
+    # Due to a change in Rails that prevents images from being compiled in vendor and lib,
+    # need to add this for the bootstrap-sass gem
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

@@ -1,6 +1,8 @@
 Kopitiam.Router.map (match)->
-  @route 'posts', path: '/'
+  @resource 'posts', { path: 'posts' }, ->
+    @route 'index'
+    @route 'new'
 
-Kopitiam.PostsRoute = Ember.Route.extend
+Kopitiam.PostsIndexRoute = Ember.Route.extend
   model: ->
     Kopitiam.Post.find()

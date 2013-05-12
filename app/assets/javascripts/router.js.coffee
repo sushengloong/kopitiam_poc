@@ -9,3 +9,7 @@ Kopitiam.IndexRoute = Ember.Route.extend
 Kopitiam.PostsIndexRoute = Ember.Route.extend
   model: ->
     Kopitiam.Post.find()
+
+Kopitiam.PostsNewRoute = Ember.Route.extend
+  model: ->
+    Kopitiam.Post.createRecord()

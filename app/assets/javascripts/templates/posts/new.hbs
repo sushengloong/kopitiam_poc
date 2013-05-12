@@ -1,1 +1,23 @@
-<h1>NEW!</h1>
+<form class="form-horizontal">
+
+  <div class="control-group">
+    <label class="control-label">Title</label>
+    <div class="controls">
+      {{view Ember.TextField valuebinding="title" classnames="input-xxlarge"}}
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Link URL</label>
+    <div class="controls">
+      {{view Ember.TextField valuebinding="linkUrl" classnames="input-xxlarge"}}
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <button {{action create}} class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+</form>
